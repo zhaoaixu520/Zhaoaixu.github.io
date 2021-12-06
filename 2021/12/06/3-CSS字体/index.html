@@ -4,19 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CSS三大特性, 八月寄望">
+    <meta name="keywords" content="3-CSS字体, 八月寄望">
     <meta name="description" content="
-CSS层叠性
-层叠性指的是多种CSS样式的叠加
-一般情况下，如果出现样式冲突，则按照书写顺序，以最后的样式为准
+font-size:字号大小
+
+font-size属性用于设置字号，推荐使用像素单位px，  使用方法：p{font-size: 16px}
 
 
-CSS继承性
-书写CSS样式的时候，子标签会继承父标签的某些样式，如文本字号和颜色
+font-family:字体
 
-
-CSS优先级
-定义CSS样式时，经">
+font-family用于设置字体，网页中常用字体有宋体、微">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -28,7 +25,7 @@ CSS优先级
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CSS三大特性 | 八月寄望</title>
+    <title>3-CSS字体 | 八月寄望</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -320,12 +317,12 @@ CSS优先级
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CSS三大特性</h1>
+                    <h1 class="description center-align post-title">3-CSS字体</h1>
                 </div>
             </div>
         </div>
@@ -483,19 +480,35 @@ CSS优先级
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ol>
-<li>CSS层叠性<ul>
-<li>层叠性指的是多种CSS样式的叠加</li>
-<li>一般情况下，如果出现样式冲突，则按照书写顺序，以最后的样式为准</li>
+<li><p>font-size:字号大小</p>
+<ul>
+<li>font-size属性用于设置字号，推荐使用像素单位px，  使用方法：p{font-size: 16px}<br><img src="https://upload-images.jianshu.io/upload_images/2519362-251be653b58ac960.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="font-size单位.png"></li>
 </ul>
 </li>
-<li>CSS继承性<ul>
-<li>书写CSS样式的时候，子标签会继承父标签的某些样式，如文本字号和颜色</li>
+<li><p>font-family:字体</p>
+<ul>
+<li>font-family用于设置字体，网页中常用字体有宋体、微软雅黑、黑体等。使用方法：p{font-family:”微软雅黑”} 可以同时指定多个字体，中间以逗号隔开。<br><img src="https://upload-images.jianshu.io/upload_images/2519362-9d14023108141ded.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="字体使用技巧.png"></li>
 </ul>
 </li>
-<li>CSS优先级<ul>
-<li>定义CSS样式时，经常出现两个及以上规则应用在同一元素上，这时就会出现优先级问题</li>
-<li>CSS的权重 需要按照一套公式来计算，这就是CSS Specificity，用一个4位字符串来表示，值从左到右，依次减小，数位之间没有进制，级别之间不可超越，如下图所示<br><img src="https://upload-images.jianshu.io/upload_images/2519362-bc4bbb3f3f961cf5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="css Specificity.png"><br>优先级示例如下所示<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.class &#123; /* 类选择器 0，0，1，0 */</span><br><span class="line">      color: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">div &#123;   /* 标签选择器 0，0，0，1 */</span><br><span class="line">      color: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">: first-child &#123; /* 标签选择器 0，0，1，0 */</span><br><span class="line">      color: orange;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#id-selector &#123; /*0，1，0，0*/</span><br><span class="line">      color: skyblue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">div &#123;   /* !important 最大 */</span><br><span class="line">      color: red!important;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;class&quot;</span> <span class="attr">id</span>=<span class="string">&quot;id-selector&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: pink&quot;</span>&gt;</span> 优先级 <span class="tag">&lt;/<span class="name">div</span>&gt;</span> <span class="comment">&lt;!-- 内嵌样式 1，0，0，0 --&gt;</span></span><br></pre></td></tr></table></figure>
-#####权重的叠加<br>示例如下：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">		<span class="selector-tag">li</span> &#123; <span class="comment">/* 0001 + 0001 = 0002 */</span></span></span><br><span class="line"><span class="css">			<span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">		&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123; <span class="comment">/* 0001 */</span></span></span><br><span class="line"><span class="css">			<span class="attribute">color</span>: green;</span></span><br><span class="line"><span class="css">		&#125;</span></span><br><span class="line"><span class="css">	</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>one<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>two<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>three<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>Unicode字体</p>
+<ul>
+<li>在网页中还可以使用Unicode来设置字体，使用方法：p{font-family:”微软雅黑”}  常见字体Unicode编码如下<br><img src="https://upload-images.jianshu.io/upload_images/2519362-e627e213a51cce8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="常见字体Unicode编码.png"></li>
+</ul>
+</li>
+<li><p>font-weight:字体粗细</p>
+<ul>
+<li>font-weight用于定义字体的粗细，属性值为：normal、bold、bolder、lighter、100~900（100的整数倍）， 其中normal = 400, bold = 700</li>
+</ul>
+</li>
+<li><p>font-style:字体样式</p>
+<ul>
+<li>属性值：normal、italic/<em>斜体</em>/、oblique/<em>斜体 不常用</em>/</li>
+</ul>
+</li>
+<li><p>font：综合设置字体样式</p>
+<ul>
+<li>选择器{font: font-style font-weight font-size/line-height font-family}</li>
+<li>使用font属性时，必须按照上面语法格式的顺序书写，不能更换顺序，必须要设置font-size和font-family属性，否则font属性将不起作用</li>
 </ul>
 </li>
 </ol>
@@ -525,7 +538,7 @@ CSS优先级
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://AugustZhao.github.io/2021/12/06/CSS%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/">https://AugustZhao.github.io/2021/12/06/CSS%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/</a>
+                    <a href="https://AugustZhao.github.io/2021/12/06/3-CSS%E5%AD%97%E4%BD%93/">https://AugustZhao.github.io/2021/12/06/3-CSS%E5%AD%97%E4%BD%93/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -744,13 +757,13 @@ CSS优先级
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/06/%E7%9B%92%E5%AD%90%E5%B8%83%E5%B1%80/">
+                <a href="/2021/12/06/4-CSS%E9%80%89%E6%8B%A9%E5%99%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="6-盒子布局">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="4-CSS选择器">
                         
-                        <span class="card-title">6-盒子布局</span>
+                        <span class="card-title">4-CSS选择器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -793,13 +806,13 @@ CSS优先级
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/06/CSS%E9%80%89%E6%8B%A9%E5%99%A8/">
+                <a href="/2021/12/05/1-HTML%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="CSS选择器">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="1-HTML常用标签">
                         
-                        <span class="card-title">CSS选择器</span>
+                        <span class="card-title">1-HTML常用标签</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -810,7 +823,7 @@ CSS优先级
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-05
                             </span>
                         <span class="publish-author">
                             
@@ -825,10 +838,6 @@ CSS优先级
                     
                     <a href="/tags/HTML/">
                         <span class="chip bg-color">HTML</span>
-                    </a>
-                    
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>
