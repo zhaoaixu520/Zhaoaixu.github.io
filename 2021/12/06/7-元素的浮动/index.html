@@ -4,21 +4,23 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="盒子布局, 八月寄望">
-    <meta name="description" content="###盒子模型就是把HTML元素看作是一个矩形盒子，也就是装内容的容器。盒子模型布局由下图所示
+    <meta name="keywords" content="7.元素的浮动, 八月寄望">
+    <meta name="description" content="####1. 元素的浮动是指设置了浮动属性的元素会脱离标准普通流的控制，移动到父元素中制定位置的过程语法格式：
+1选择器 &amp;#123;float:属性值;&amp;#125;
 
-盒子的边框border
-border-width 边框宽度
-borderstyle 边框样式常用属性值：
 
 
 属性值
-作用
+描述
 
 
 
-none
-没">
+left
+元素向左浮动
+
+
+right
+元素向">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +32,7 @@ none
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>盒子布局 | 八月寄望</title>
+    <title>7.元素的浮动 | 八月寄望</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -322,12 +324,12 @@ none
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">盒子布局</h1>
+                    <h1 class="description center-align post-title">7.元素的浮动</h1>
                 </div>
             </div>
         </div>
@@ -484,104 +486,69 @@ none
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###盒子模型就是把HTML元素看作是一个矩形盒子，也就是装内容的容器。<br>盒子模型布局由下图所示<br><img src="https://upload-images.jianshu.io/upload_images/2519362-7213b6934aec0607.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="盒子布局.png"></p>
-<ol>
-<li>盒子的边框border<ul>
-<li>border-width 边框宽度</li>
-<li>borderstyle 边框样式<br>常用属性值：<table>
+                <p>####1. 元素的浮动是指设置了浮动属性的元素会脱离标准普通流的控制，移动到父元素中制定位置的过程<br>语法格式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;<span class="attribute">float</span>:属性值;&#125;</span><br></pre></td></tr></table></figure>
+<table>
 <thead>
 <tr>
 <th>属性值</th>
-<th align="center">作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>none</td>
-<td align="center">没有边框，忽略所有边框宽度</td>
-</tr>
-<tr>
-<td>solid</td>
-<td align="center">边框为单实线（最常用）</td>
-</tr>
-<tr>
-<td>dashed</td>
-<td align="center">边框为虚线</td>
-</tr>
-<tr>
-<td>dotted</td>
-<td align="center">边框为点线</td>
-</tr>
-<tr>
-<td>double</td>
-<td align="center">边框为双实线</td>
-</tr>
-</tbody></table>
-</li>
-<li>border-color 边框颜色<br>三种样式可以单独设置，也可以合并设置<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123; <span class="comment">/* 分开设置*/</span></span><br><span class="line">      <span class="attribute">border-width</span>: <span class="number">2px</span>;</span><br><span class="line">      <span class="attribute">border-style</span>: solid;</span><br><span class="line">   <span class="attribute">border-color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123; <span class="comment">/* 合并设置*/</span></span><br><span class="line">     <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#F40</span>;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>border-radius 圆角</li>
-</ul>
-</li>
-<li>内边距 padding<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">padding-top</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">padding-right</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">padding-bottom</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">padding-left</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="comment">/*合并设置*/</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">20px</span> ; <span class="comment">/*上下左右都是20px*/</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">30px</span>; <span class="comment">/*上下20px, 左右30px*/</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">30px</span> <span class="number">50px</span>; <span class="comment">/*上20px 左右都是30px 下 50px*/</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">30px</span> <span class="number">50px</span> <span class="number">10px</span> ; <span class="comment">/*上20px 右30px 下50px 左10px*/</span></span><br></pre></td></tr></table></figure></li>
-<li>外边距 margin   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">margin-top</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">margin-right</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">margin-left</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="comment">/*合并设置*/</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">20px</span> ; <span class="comment">/*上下左右都是20px*/</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">30px</span>; <span class="comment">/*上下20px, 左右30px*/</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">30px</span> <span class="number">50px</span>; <span class="comment">/*上20px 左右都是30px 下 50px*/</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">30px</span> <span class="number">50px</span> <span class="number">10px</span> ; <span class="comment">/*上20px 右30px 下50px 左10px*/</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>外边距设置居中对齐<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">margin</span>: <span class="number">20px</span> auto; 左右居中</span><br></pre></td></tr></table></figure></li>
-<li>外边距合并<br>比如有两个div 第一个div margin-right : 30 px ，第二个div margin-left : 50px,则两个div的间距为50px; 这就是外边距合并</li>
-</ul>
-</li>
-<li>html元素的尺寸计算<ol>
-<li>外盒尺寸计算<br>Element 空间高度 = content height + padding + border + margin<br>Element 空间宽度 = content height + padding + border + margin</li>
-<li>内盒尺寸计算<br>Element height = content height + padding + border (height为内容高度)<br>Element width = content height + padding + border (wight为内容宽度)<blockquote>
-<ul>
-<li>当一个盒子没有给定高/宽度 padding不会影响盒子的大小</li>
-<li>当一个盒子的宽/高度继承自父亲的宽/高度</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-</li>
-<li>盒子模型布局稳定性<br>按照优先使用 宽度（width） 其次使用内边距 （padding） 再次 外边距 （margin）<blockquote>
-<p>width &gt; padding &gt; margin  /*稳定性*/</p>
-</blockquote>
-<ul>
-<li>margin 会有外边距合并，稳定性不高</li>
-<li>padding 会影响盒子大小， 需要进行加减运算</li>
-<li>width 稳定性高 经常使用</li>
-</ul>
-</li>
-<li>css3 盒子模型<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-sizing</span>: content-box /*以前的盒子模型*/</span><br><span class="line">box-sizing: border-box;  <span class="comment">/*padding 和 border 不会撑开盒子，即padding和border 是包含到width里面的*/</span></span><br></pre></td></tr></table></figure></li>
-<li>盒子阴影<br>语法格式：<br>box-shadow: 水平位置 垂直位置 模糊距离 阴影尺寸 阴影颜色 内/外阴影;<table>
-<thead>
-<tr>
-<th>值</th>
 <th align="center">描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>h-shadow</td>
-<td align="center">必需。水平阴影的位置，可为负值</td>
+<td>left</td>
+<td align="center">元素向左浮动</td>
 </tr>
 <tr>
-<td>v-shadow</td>
-<td align="center">必需。垂直阴影位置，可为负值</td>
+<td>right</td>
+<td align="center">元素向右浮动</td>
 </tr>
 <tr>
-<td>blur</td>
-<td align="center">可选。模糊距离</td>
+<td>none</td>
+<td align="center">元素不浮动（默认）</td>
+</tr>
+</tbody></table>
+<ol>
+<li>如果盒子都不加浮动，就是标准流 块级元素自上而下显示</li>
+<li>浮动脱离标准流，不占位置，会影响标准流。浮动只有左右浮动</li>
+<li>使用浮动布局，首先应创建一个包含块，即父元素，但不会超过内边距范围</li>
+<li>一个父盒子里，如果一个子元素浮动，则其它子元素都需要浮动，这样才能一行对齐显示</li>
+</ol>
+<p>####2. 布局流程</p>
+<ol>
+<li>确定页面版心(可视区域)。</li>
+<li>分析页面中的行模块，以及每个行模块中的列模块</li>
+<li>制作HTML页面，CSS文件</li>
+<li>CSS初始化，然后运用盒子模型，通过DIV+CSS布局来控制页面的各个模块</li>
+</ol>
+<p>####3. 清除浮动<br>清除浮动主要为了解决父级元素浮动引起内部高度为0的问题</p>
+<ol>
+<li>clear属性<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;<span class="attribute">clear</span>: 属性值; &#125; </span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td align="center">清除左侧浮动的影响</td>
 </tr>
 <tr>
-<td>spread</td>
-<td align="center">可选。阴影尺寸</td>
+<td>right</td>
+<td align="center">清除右侧浮动的影响</td>
 </tr>
 <tr>
-<td>color</td>
-<td align="center">可选。阴影颜色</td>
-</tr>
-<tr>
-<td>inset</td>
-<td align="center">可选。将外部阴影（outset）改为内部阴影</td>
+<td>both</td>
+<td align="center">同时清除</td>
 </tr>
 </tbody></table>
 </li>
+<li>清除浮动方法一: 额外标签法<br>在浮动元素末尾添加一个空标签<div> 或者<br />都可以<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.clear-div &#123;clear: both; &#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;clear-div&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>清除浮动方法二: 父级加overflow法<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">父级选择器 &#123; <span class="attribute">overflow</span>: hidden;&#125;</span><br></pre></td></tr></table></figure></li>
+<li>清除浮动方法三: after 伪元素清除法<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span>: after &#123;</span><br><span class="line">   content:<span class="string">&quot;.&quot;</span>; <span class="comment">/*内容为小点，或者其它，尽量不要加空*/</span></span><br><span class="line">   <span class="attribute">display</span>: block;</span><br><span class="line">   <span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">   <span class="attribute">visibility</span>: hidden;</span><br><span class="line">   <span class="attribute">clear</span> : both;</span><br><span class="line">&#125;</span><br><span class="line"> <span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">     *zoom : <span class="number">1</span>; <span class="comment">/* *代表ie6 7 能识别的特殊符号  ie6 7处理方式*/</span></span><br><span class="line"> &#125;</span><br><span class="line">&lt;<span class="selector-tag">div</span> class=&quot;father clearfix&quot;&gt; </span><br><span class="line">     &lt;<span class="selector-tag">div</span>&gt; &lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">     &lt;<span class="selector-tag">div</span>&gt; &lt;/<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure></li>
+<li>清除浮动方法四: 使用before和 after 双伪元素清除法 （推荐）<br>使用方法<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span>:before, .clearfix:after &#123;</span><br><span class="line">   content: <span class="string">&quot; &quot;</span>;</span><br><span class="line">   <span class="attribute">display</span>: table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span>:after &#123;</span><br><span class="line">   clear: both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">   *zoom : <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
                 
@@ -609,7 +576,7 @@ none
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://AugustZhao.github.io/2021/12/06/%E7%9B%92%E5%AD%90%E5%B8%83%E5%B1%80/">https://AugustZhao.github.io/2021/12/06/%E7%9B%92%E5%AD%90%E5%B8%83%E5%B1%80/</a>
+                    <a href="https://AugustZhao.github.io/2021/12/06/7-%E5%85%83%E7%B4%A0%E7%9A%84%E6%B5%AE%E5%8A%A8/">https://AugustZhao.github.io/2021/12/06/7-%E5%85%83%E7%B4%A0%E7%9A%84%E6%B5%AE%E5%8A%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -824,9 +791,10 @@ none
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/12/06/7-%E5%85%83%E7%B4%A0%E7%9A%84%E6%B5%AE%E5%8A%A8/">
                     <div class="card-image">
@@ -844,9 +812,9 @@ none
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -855,6 +823,7 @@ none
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -877,13 +846,13 @@ none
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/06/CSS%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7/">
+                <a href="/2021/12/06/%E7%9B%92%E5%AD%90%E5%B8%83%E5%B1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="CSS三大特性">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="盒子布局">
                         
-                        <span class="card-title">CSS三大特性</span>
+                        <span class="card-title">盒子布局</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
