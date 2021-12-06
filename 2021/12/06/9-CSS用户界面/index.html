@@ -4,33 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="8-CSS定位, 八月寄望">
-    <meta name="description" content="###定位属性定位属性包含定位模式和边偏移两部分####1.边偏移
-
-
-
-边偏移属性
-描述
-
-
-
-top
-顶部偏移量
-
-
-bottom
-底部偏移量
-
-
-left
-左部偏移量
-
-
-top
-右部偏移量
-
-
-2. 定位模式分类定位的基本语法格式如">
+    <meta name="keywords" content="9-CSS用户界面, 八月寄望">
+    <meta name="description" content="####1. 鼠标样式cursor鼠标移动到元素上的表现形式   1选择器 &amp;#123;cursor: 属性值&amp;#125;常用属性值 | 描述–|:–:|defaut | 默认样式pointer | 小手指样式move | 移动样式text">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -42,7 +17,7 @@ top
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>8-CSS定位 | 八月寄望</title>
+    <title>9-CSS用户界面 | 八月寄望</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -334,12 +309,12 @@ top
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">8-CSS定位</h1>
+                    <h1 class="description center-align post-title">9-CSS用户界面</h1>
                 </div>
             </div>
         </div>
@@ -453,17 +428,9 @@ top
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/HTML/">
-                                <span class="chip bg-color">HTML</span>
-                            </a>
-                        
-                            <a href="/tags/CSS/">
-                                <span class="chip bg-color">CSS</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -496,67 +463,32 @@ top
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###定位属性<br>定位属性包含定位模式和边偏移两部分<br>####1.边偏移</p>
-<table>
-<thead>
-<tr>
-<th>边偏移属性</th>
-<th align="center">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>top</td>
-<td align="center">顶部偏移量</td>
-</tr>
-<tr>
-<td>bottom</td>
-<td align="center">底部偏移量</td>
-</tr>
-<tr>
-<td>left</td>
-<td align="center">左部偏移量</td>
-</tr>
-<tr>
-<td>top</td>
-<td align="center">右部偏移量</td>
-</tr>
-</tbody></table>
-<h4 id="2-定位模式分类"><a href="#2-定位模式分类" class="headerlink" title="2. 定位模式分类"></a>2. 定位模式分类</h4><p>定位的基本语法格式如下<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123; <span class="attribute">position</span>:属性值; &#125;</span><br></pre></td></tr></table></figure><br>postion属性常用值<br>值 | 描述<br>–|:–:|<br>static | 静态定位（默认）<br>relative | 相对定位，相对于原文档流的位置进行定位<br>absolute | 绝对定位，相对于上一个以及定位的父元素进行定位<br>fixed | 固定定位，相对于浏览器窗口进行定位<br>#####(1). 静态定位（static）</p>
+                <p>####1. 鼠标样式cursor<br>鼠标移动到元素上的表现形式<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;<span class="attribute">cursor</span>: 属性值&#125;</span><br></pre></td></tr></table></figure><br>常用属性值 | 描述<br>–|:–:|<br>defaut | 默认样式<br>pointer | 小手指样式<br>move | 移动样式<br>text | 文本样式<br>####2. 轮廓 outline<br>绘制于元素周围的一条线，位于边框边缘外围，可起到突出元素的作用，一般都将该轮廓去掉<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">outline</span>: outline-color | outline-style | outline-width </span><br><span class="line">/* 一般都是去掉 */</span><br><span class="line"> &#123;outline:<span class="number">0</span>;&#125;</span><br></pre></td></tr></table></figure><br>####3. 文本域拖拽(resize)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">style</span>=<span class="string">&quot;resize: none;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span> <span class="comment">&lt;!-- 禁止文本域拖拽 --&gt;</span></span><br></pre></td></tr></table></figure>
+<p>####4. vertical-align 垂直对齐 （一般用于图文混排）<br>文字的几条线，如下图所示<br><img src="https://upload-images.jianshu.io/upload_images/2519362-b94024f4cc3d49d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文字的几条线.png"></p>
+<p>vertical-align 语法：<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vertiacl-align: baseline | top | middle | bottom</span><br></pre></td></tr></table></figure><br>####5. 去除图片底部空白缝隙<br>图片或者表单等行内块元素，它的底线会和父级盒子基线对齐。会造成图片底部有有一个空白缝隙<br>解决办法：</p>
 <ul>
-<li>静态定位是所有元素的默认定位方式，当position属性值为static时，可以将元素定位于文档流的默认位置</li>
-<li>静态定位，无法通过边偏移属性来改变元素的位置</li>
-</ul>
-<p>#####(2). 相对定位（relative）</p>
-<ul>
-<li>通过边偏移来移动位置，但是原来的位置继续占有。</li>
-<li>每次移动的位置是以自己左上角为参考点</li>
-</ul>
-<p>#####(3). 绝对定位（absolute）</p>
-<ul>
-<li>通过边偏移移动位置，但是完全脱离标准流，不占位置</li>
-<li>每次移动的位置是以父容器左上角为参考点，若父容器没有定位，则以父容器的上一级来定位，若都没有，则以浏览器左上角作为参考点</li>
-<li>子绝父相  子基使用绝对定位的时候，父级要使用相对定位</li>
-<li>绝对定位水平居中<ol>
-<li>首先left：50%</li>
-<li>然后移动自己宽/高的一半 负值，margin-left</li>
-</ol>
-</li>
-</ul>
-<p>#####(4). 固定定位（fixed）</p>
-<ul>
-<li>固定定位的元素根父容器没有关系，只与浏览器有关</li>
-<li>完全脱标，不占有位置，不随着滚动条滚动<br>####3. 叠放次序<br>多个元素可能出现叠加效果，需要设置z-index来指定元素的层级关系</li>
+<li>给图片设置vertiacl-align，让图片不要和基线对齐</li>
+<li>给图片添加 display：block 转换为块级元素<br>####6. 文字处理</li>
 </ul>
 <ol>
-<li>z-index：默认值为0， 取值越大，定位元素在层叠元素中越居上</li>
-<li>如果取值相同，根据书写顺序，后来居上</li>
-<li>后面数字不能添加单位</li>
-<li>只有相对定位，绝对定位，固定定位具有该属性，其余标准流，浮动，静态定位都无此属性，亦不可指定此属性</li>
-</ol>
-<p>####4. 固定绝对定位模式转换</p>
-<ul>
-<li>元素添加了 绝对定位和固定定位后，元素模式也会发生转换，都转换为 行内块模式</li>
+<li>word-break: 自动换行<ul>
+<li>normal 使用浏览器默认的换行规则。</li>
+<li>break-all 允许在单词内换行。</li>
+<li>keep-all 只能在半角空格或者连字符处换行。</li>
 </ul>
+</li>
+<li>white-space：设置文本显示方式。<ul>
+<li>normal：默认处理方式</li>
+<li>nowrap：强制在一行内袭按时所有文本，直到文本结束，或者遇到br标签对象才换行</li>
+</ul>
+</li>
+<li>text-overflow：文字溢出<ul>
+<li>clip：不显示省略标记（…）,只是简单裁切</li>
+<li>elipis：当对象内文本溢出时显示省略标记（…）</li>
+</ul>
+</li>
+</ol>
 
                 
             </div>
@@ -583,7 +515,7 @@ top
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://AugustZhao.github.io/2021/12/06/8-CSS%E5%AE%9A%E4%BD%8D/">https://AugustZhao.github.io/2021/12/06/8-CSS%E5%AE%9A%E4%BD%8D/</a>
+                    <a href="https://AugustZhao.github.io/2021/12/06/9-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/">https://AugustZhao.github.io/2021/12/06/9-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -620,15 +552,7 @@ top
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/HTML/">
-                                    <span class="chip bg-color">HTML</span>
-                                </a>
-                            
-                                <a href="/tags/CSS/">
-                                    <span class="chip bg-color">CSS</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -798,9 +722,10 @@ top
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/12/06/9-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/">
                     <div class="card-image">
@@ -818,9 +743,9 @@ top
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -829,6 +754,7 @@ top
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -839,13 +765,13 @@ top
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/06/7-%E5%85%83%E7%B4%A0%E7%9A%84%E6%B5%AE%E5%8A%A8/">
+                <a href="/2021/12/06/8-CSS%E5%AE%9A%E4%BD%8D/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="7-元素的浮动">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="8-CSS定位">
                         
-                        <span class="card-title">7-元素的浮动</span>
+                        <span class="card-title">8-CSS定位</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
