@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="9-CSS用户界面, 八月寄望">
-    <meta name="description" content="####1. 鼠标样式cursor鼠标移动到元素上的表现形式   1选择器 &amp;#123;cursor: 属性值&amp;#125;常用属性值 | 描述–|:–:|defaut | 默认样式pointer | 小手指样式move | 移动样式text">
+    <meta name="keywords" content="10-页面元素和事件, 八月寄望">
+    <meta name="description" content="#####1. 获取页面元素
+
+getElementById(‘id’)  根据元素的id来获取元素
+getElementsByTagName 根据标签名来获取元素
+getElementsByName 根据标签名的name属性来获取元素
+g">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>9-CSS用户界面 | 八月寄望</title>
+    <title>10-页面元素和事件 | 八月寄望</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">9-CSS用户界面</h1>
+                    <h1 class="description center-align post-title">10-页面元素和事件</h1>
                 </div>
             </div>
         </div>
@@ -428,9 +433,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/HTML/">
+                                <span class="chip bg-color">HTML</span>
+                            </a>
+                        
+                            <a href="/tags/CSS/">
+                                <span class="chip bg-color">CSS</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -463,29 +476,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>####1. 鼠标样式cursor<br>鼠标移动到元素上的表现形式<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123;<span class="attribute">cursor</span>: 属性值&#125;</span><br></pre></td></tr></table></figure><br>常用属性值 | 描述<br>–|:–:|<br>defaut | 默认样式<br>pointer | 小手指样式<br>move | 移动样式<br>text | 文本样式<br>####2. 轮廓 outline<br>绘制于元素周围的一条线，位于边框边缘外围，可起到突出元素的作用，一般都将该轮廓去掉<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">outline</span>: outline-color | outline-style | outline-width </span><br><span class="line">/* 一般都是去掉 */</span><br><span class="line"> &#123;outline:<span class="number">0</span>;&#125;</span><br></pre></td></tr></table></figure><br>####3. 文本域拖拽(resize)</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">style</span>=<span class="string">&quot;resize: none;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span> <span class="comment">&lt;!-- 禁止文本域拖拽 --&gt;</span></span><br></pre></td></tr></table></figure>
-<p>####4. vertical-align 垂直对齐 （一般用于图文混排）<br>文字的几条线，如下图所示<br><img src="https://upload-images.jianshu.io/upload_images/2519362-b94024f4cc3d49d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文字的几条线.png"></p>
-<p>vertical-align 语法：<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vertiacl-align: baseline | top | middle | bottom</span><br></pre></td></tr></table></figure><br>####5. 去除图片底部空白缝隙<br>图片或者表单等行内块元素，它的底线会和父级盒子基线对齐。会造成图片底部有有一个空白缝隙<br>解决办法：</p>
+                <p>#####1. 获取页面元素</p>
 <ul>
-<li>给图片设置vertiacl-align，让图片不要和基线对齐</li>
-<li>给图片添加 display：block 转换为块级元素<br>####6. 文字处理</li>
+<li>getElementById(‘id’)  根据元素的id来获取元素</li>
+<li>getElementsByTagName 根据标签名来获取元素</li>
+<li>getElementsByName 根据标签名的name属性来获取元素</li>
+<li>getElementsByClassName 根据标签名的class属性来获取元素</li>
+<li>querySelector(‘#main’)  查询选择器获取到第一个匹配的元素</li>
+<li>querySelectorAll(‘.a’) 查询选择器所有元素<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> &gt;</span>div1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;className&#x27;</span>&gt;</span>div2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">name</span>=<span class="string">&#x27;div2&#x27;</span>&gt;</span>div3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;main&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;a&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;a&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> conta = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;container&#x27;</span>); <span class="comment">/* 不存在浏览器兼容问题 */</span></span></span><br><span class="line"><span class="javascript">		<span class="built_in">console</span>.log(conta);</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> div1 = conta.getElementsByTagName(<span class="string">&#x27;div&#x27;</span>); <span class="comment">/* 不存在浏览器兼容问题 */</span></span></span><br><span class="line"><span class="javascript">		<span class="built_in">console</span>.log(div1);</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> div2 = <span class="built_in">document</span>.getElementsByName(<span class="string">&#x27;div2&#x27;</span>); <span class="comment">/* 存在浏览器兼容问题 */</span></span></span><br><span class="line"><span class="javascript">		<span class="built_in">console</span>.log(div2);</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> div3 = <span class="built_in">document</span>.getElementsByClassName(<span class="string">&#x27;className&#x27;</span>)   <span class="comment">/* 存在浏览器兼容问题  IE9 后支持*/</span></span></span><br><span class="line"><span class="javascript">		<span class="built_in">console</span>.log(div3);</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> main = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;#main&#x27;</span>);  <span class="comment">/* &#x27;.classname&#x27;  or &#x27;#main&#x27; */</span> <span class="comment">/* 存在浏览器兼容问题  IE8 后支持*/</span></span></span><br><span class="line"><span class="javascript">		<span class="built_in">console</span>.log(main);</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> a = <span class="built_in">document</span>.querySelectorAll(<span class="string">&#x27;.a&#x27;</span>); <span class="comment">/* 存在浏览器兼容问题  IE8 后支持*/</span></span></span><br><span class="line"><span class="javascript">		<span class="built_in">console</span>.log(a);</span></span><br><span class="line"><span class="javascript">	</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+#####2. 事件<br>当用户做了某一个操作的时候，给与的反馈 即 触发-响应</li>
 </ul>
 <ol>
-<li>word-break: 自动换行<ul>
-<li>normal 使用浏览器默认的换行规则。</li>
-<li>break-all 允许在单词内换行。</li>
-<li>keep-all 只能在半角空格或者连字符处换行。</li>
-</ul>
-</li>
-<li>white-space：设置文本显示方式。<ul>
-<li>normal：默认处理方式</li>
-<li>nowrap：强制在一行内袭按时所有文本，直到文本结束，或者遇到br标签对象才换行</li>
-</ul>
-</li>
-<li>text-overflow：文字溢出<ul>
-<li>clip：不显示省略标记（…）,只是简单裁切</li>
-<li>elipis：当对象内文本溢出时显示省略标记（…）</li>
+<li>获取按钮</li>
+<li>给按钮注册事件<ul>
+<li>事件名称 click</li>
+<li>事件源</li>
+<li>事件处理函数<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;btn&#x27;</span>); <span class="comment">/*1. 获取按钮*/</span></span><br><span class="line">btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;  <span class="comment">/*2. 给按钮注册事件*/</span></span><br><span class="line">   alert(<span class="string">&#x27;点击了我&#x27;</span>) </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+#####3. 属性操作<br>获取属性，通过拿到相应的元素，再通过.点语法拿到元素的属性值<br>设置属性，通过拿到相应的元素，再通过.点语法设置元素的属性值</li>
 </ul>
 </li>
 </ol>
@@ -515,7 +522,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://AugustZhao.github.io/2021/12/06/9-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/">https://AugustZhao.github.io/2021/12/06/9-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/</a>
+                    <a href="https://AugustZhao.github.io/2021/12/06/10-%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0%E5%92%8C%E4%BA%8B%E4%BB%B6/">https://AugustZhao.github.io/2021/12/06/10-%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0%E5%92%8C%E4%BA%8B%E4%BB%B6/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -552,7 +559,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/HTML/">
+                                    <span class="chip bg-color">HTML</span>
+                                </a>
+                            
+                                <a href="/tags/CSS/">
+                                    <span class="chip bg-color">CSS</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -722,9 +737,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/12/06/10-%E9%A1%B5%E9%9D%A2%E5%85%83%E7%B4%A0%E5%92%8C%E4%BA%8B%E4%BB%B6/">
                     <div class="card-image">
@@ -742,9 +758,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -753,6 +769,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -775,13 +792,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/06/8-CSS%E5%AE%9A%E4%BD%8D/">
+                <a href="/2021/12/06/9-CSS%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="8-CSS定位">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="9-CSS用户界面">
                         
-                        <span class="card-title">8-CSS定位</span>
+                        <span class="card-title">9-CSS用户界面</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -801,18 +818,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
-                    </a>
-                    
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
-                    </a>
-                    
                 </div>
                 
             </div>
