@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="8-CSS定位, 雪域冰城">
-    <meta name="description" content="###定位属性定位属性包含定位模式和边偏移两部分####1.边偏移
-
+    <meta name="description" content="定位属性定位属性包含定位模式和边偏移两部分
+1.边偏移
 
 
 边偏移属性
@@ -30,7 +30,7 @@ top
 右部偏移量
 
 
-2. 定位模式分类定位的基本语法格式如">
+2. 定位模式分类定位的基本语法格式如下   1选择">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -496,8 +496,8 @@ top
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>###定位属性<br>定位属性包含定位模式和边偏移两部分<br>####1.边偏移</p>
-<table>
+                <h3 id="定位属性"><a href="#定位属性" class="headerlink" title="定位属性"></a>定位属性</h3><p>定位属性包含定位模式和边偏移两部分</p>
+<h4 id="1-边偏移"><a href="#1-边偏移" class="headerlink" title="1.边偏移"></a>1.边偏移</h4><table>
 <thead>
 <tr>
 <th>边偏移属性</th>
@@ -521,18 +521,16 @@ top
 <td align="center">右部偏移量</td>
 </tr>
 </tbody></table>
-<h4 id="2-定位模式分类"><a href="#2-定位模式分类" class="headerlink" title="2. 定位模式分类"></a>2. 定位模式分类</h4><p>定位的基本语法格式如下<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123; <span class="attribute">position</span>:属性值; &#125;</span><br></pre></td></tr></table></figure><br>postion属性常用值<br>值 | 描述<br>–|:–:|<br>static | 静态定位（默认）<br>relative | 相对定位，相对于原文档流的位置进行定位<br>absolute | 绝对定位，相对于上一个以及定位的父元素进行定位<br>fixed | 固定定位，相对于浏览器窗口进行定位<br>#####(1). 静态定位（static）</p>
-<ul>
+<h4 id="2-定位模式分类"><a href="#2-定位模式分类" class="headerlink" title="2. 定位模式分类"></a>2. 定位模式分类</h4><p>定位的基本语法格式如下<br>   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选择器 &#123; <span class="attribute">position</span>:属性值; &#125;</span><br></pre></td></tr></table></figure><br>postion属性常用值<br>值 | 描述<br>–|:–:|<br>static | 静态定位（默认）<br>relative | 相对定位，相对于原文档流的位置进行定位<br>absolute | 绝对定位，相对于上一个以及定位的父元素进行定位<br>fixed | 固定定位，相对于浏览器窗口进行定位</p>
+<h5 id="1-静态定位（static）"><a href="#1-静态定位（static）" class="headerlink" title="(1). 静态定位（static）"></a>(1). 静态定位（static）</h5><ul>
 <li>静态定位是所有元素的默认定位方式，当position属性值为static时，可以将元素定位于文档流的默认位置</li>
 <li>静态定位，无法通过边偏移属性来改变元素的位置</li>
 </ul>
-<p>#####(2). 相对定位（relative）</p>
-<ul>
+<h5 id="2-相对定位（relative）"><a href="#2-相对定位（relative）" class="headerlink" title="(2). 相对定位（relative）"></a>(2). 相对定位（relative）</h5><ul>
 <li>通过边偏移来移动位置，但是原来的位置继续占有。</li>
 <li>每次移动的位置是以自己左上角为参考点</li>
 </ul>
-<p>#####(3). 绝对定位（absolute）</p>
-<ul>
+<h5 id="3-绝对定位（absolute）"><a href="#3-绝对定位（absolute）" class="headerlink" title="(3). 绝对定位（absolute）"></a>(3). 绝对定位（absolute）</h5><ul>
 <li>通过边偏移移动位置，但是完全脱离标准流，不占位置</li>
 <li>每次移动的位置是以父容器左上角为参考点，若父容器没有定位，则以父容器的上一级来定位，若都没有，则以浏览器左上角作为参考点</li>
 <li>子绝父相  子基使用绝对定位的时候，父级要使用相对定位</li>
@@ -542,10 +540,9 @@ top
 </ol>
 </li>
 </ul>
-<p>#####(4). 固定定位（fixed）</p>
-<ul>
+<h5 id="4-固定定位（fixed）"><a href="#4-固定定位（fixed）" class="headerlink" title="(4). 固定定位（fixed）"></a>(4). 固定定位（fixed）</h5><ul>
 <li>固定定位的元素根父容器没有关系，只与浏览器有关</li>
-<li>完全脱标，不占有位置，不随着滚动条滚动<br>####3. 叠放次序<br>多个元素可能出现叠加效果，需要设置z-index来指定元素的层级关系</li>
+<li>完全脱标，不占有位置，不随着滚动条滚动<h4 id="3-叠放次序"><a href="#3-叠放次序" class="headerlink" title="3. 叠放次序"></a>3. 叠放次序</h4>多个元素可能出现叠加效果，需要设置z-index来指定元素的层级关系</li>
 </ul>
 <ol>
 <li>z-index：默认值为0， 取值越大，定位元素在层叠元素中越居上</li>
@@ -553,8 +550,7 @@ top
 <li>后面数字不能添加单位</li>
 <li>只有相对定位，绝对定位，固定定位具有该属性，其余标准流，浮动，静态定位都无此属性，亦不可指定此属性</li>
 </ol>
-<p>####4. 固定绝对定位模式转换</p>
-<ul>
+<h4 id="4-固定绝对定位模式转换"><a href="#4-固定绝对定位模式转换" class="headerlink" title="4. 固定绝对定位模式转换"></a>4. 固定绝对定位模式转换</h4><ul>
 <li>元素添加了 绝对定位和固定定位后，元素模式也会发生转换，都转换为 行内块模式</li>
 </ul>
 
